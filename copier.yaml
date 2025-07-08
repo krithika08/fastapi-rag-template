@@ -1,0 +1,27 @@
+_min_copier_version: "8.0"
+_templates_suffix: .jinja
+
+
+project_name:
+  type: str
+  help: Name of your RAG project
+
+use_oci:
+  type: bool
+  default: true
+  help: Will you use OCI GenAI services?
+
+wallet_path:
+  type: str
+  default: config/db
+  help: Path to OCI DB wallet
+
+config_file_path:
+  type: str
+  default: config/config.yaml
+  help: Path to main config file
+
+_exclude:
+  - __pycache__/
+  - "*.pyc"
+  - "*.DS_Store"
